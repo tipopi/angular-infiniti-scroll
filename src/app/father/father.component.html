@@ -1,0 +1,7 @@
+
+<app-scroll class="ex" [option]="option" [template]="myTemplate" >
+</app-scroll>
+
+ <ng-template  #myTemplate let-state="state">
+   <app-son [state]="state"></app-son>
+</ng-template>

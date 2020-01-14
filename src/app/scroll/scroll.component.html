@@ -1,0 +1,13 @@
+<cdk-virtual-scroll-viewport [ngStyle]="option.style" id="scr"  class="example-viewport" itemSize="itemHeight" minBufferPx="200" maxBufferPx="400">
+  <div>
+    <ng-container  *cdkVirtualFor="let state of item$ | async">
+      <ng-template 
+    *ngTemplateOutlet="template;context:{state:state}"
+     ></ng-template>
+    </ng-container>
+    </div>
+</cdk-virtual-scroll-viewport>
+<!-- <div class="example-viewport">
+  <div class="item" *ngFor="let state of item$ | async">{{state}}</div>
+</div> -->
+<!-- <button id="btn">ok</button> -->
